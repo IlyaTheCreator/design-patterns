@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DuckPool
+namespace DuckLibrary.Classes
 {
-    public class MallardDuck : Duck
+    public class DecoyDuck : Duck
     {
         public override string Display()
         {

@@ -1,14 +1,9 @@
 ﻿using System;
 
-namespace DuckPool
+namespace DuckLibrary.Classes
 {
     public abstract class Duck
     {
-        public string Quack()
-        {
-            return $"Quack {GetType()}";
-        }
-
         public string Swim()
         {
             return $"Swim {GetType()}";
