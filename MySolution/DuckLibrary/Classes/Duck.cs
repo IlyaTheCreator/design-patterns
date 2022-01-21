@@ -1,14 +1,30 @@
-﻿using System;
+﻿using DuckLibrary.Interfaces;
+using System;
 
 namespace DuckLibrary.Classes
 {
-    public abstract class Duck
+    public class Duck
     {
+        protected FlyBehavior flyBehavior;
+        protected QuackBehavior quackBehavior;
+
         public string Swim()
         {
             return $"Swim {GetType()}";
         }
 
-        abstract public string Display();
+        public string Display() {
+            return $"Swim ()";
+        }
+
+        public string Fly()
+        {
+            return flyBehavior.Fly();
+        }
+
+        public string Quack()
+        {
+            return quackBehavior.Quack();
+        }
     }
 }

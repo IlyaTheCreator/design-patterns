@@ -4,24 +4,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DuckLibrary.Classes.Behaviors;
 
 namespace DuckLibrary.Classes
 {
-    public class RedheadDuck : Duck, IFlyable, IQuackable
+    public class RedheadDuck : Duck
     {
-        public override string Display()
+        public RedheadDuck()
         {
-            return $"Display {GetType()}";
-        }
-
-        public string Fly()
-        {
-            return $"Fly {GetType()}";
-        }
-
-        public string Quack()
-        {
-            return $"Quack {GetType()}";
+            flyBehavior = new FlyWithWings();
+            quackBehavior = new DQuack();
         }
     }
 }

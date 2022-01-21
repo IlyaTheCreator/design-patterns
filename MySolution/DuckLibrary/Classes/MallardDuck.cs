@@ -3,25 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DuckLibrary.Interfaces;
+using DuckLibrary.Classes.Behaviors;
 
 namespace DuckLibrary.Classes
 {
-    public class MallardDuck : Duck, IFlyable, IQuackable
+    public class MallardDuck : Duck
     {
-        public override string Display()
+        public MallardDuck()
         {
-            return $"Display {GetType()}";
-        }
-
-        public string Fly()
-        {
-            return $"Fly {GetType()}";
-        }
-
-        public string Quack()
-        {
-            return $"Quack {GetType()}";
+            flyBehavior = new FlyWithWings();
+            quackBehavior = new DQuack();
         }
     }
 }
