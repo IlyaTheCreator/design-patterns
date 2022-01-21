@@ -10,11 +10,11 @@ namespace DuckLibrary.Classes
 
         public string Swim()
         {
-            return $"Swim {GetType()}";
+            return "Буль буль буль";
         }
 
         public string Display() {
-            return $"Swim ()";
+            return $"{GetType()} | {flyBehavior.GetType()} | {quackBehavior.GetType()}";
         }
 
         public string Fly()
