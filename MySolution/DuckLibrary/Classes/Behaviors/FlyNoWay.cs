@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DuckLibrary.Classes.Behaviors
 {
-    public class FlyNoWay : FlyBehavior
+    public class FlyNoWay : IFlyBehavior
     {
         public string Fly()
         {

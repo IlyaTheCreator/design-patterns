@@ -5,8 +5,8 @@ namespace DuckLibrary.Classes
 {
     public class Duck
     {
-        protected FlyBehavior flyBehavior;
-        protected QuackBehavior quackBehavior;
+        protected IFlyBehavior flyBehavior;
+        protected IQuackBehavior quackBehavior;
 
         public string Swim()
         {
@@ -25,6 +25,16 @@ namespace DuckLibrary.Classes
         public string Quack()
         {
             return quackBehavior.Quack();
+        }
+
+        public void SetFlyBehavior(IFlyBehavior fb)
+        {
+            flyBehavior = fb;
+        }
+
+        public void SetQuackBehavior(IQuackBehavior qb)
+        {
+            quackBehavior = qb;
         }
     }
 }

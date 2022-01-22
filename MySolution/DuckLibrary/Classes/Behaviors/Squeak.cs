@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DuckLibrary.Classes.Behaviors
 {
-    public class Squeak : QuackBehavior
+    public class Squeak : IQuackBehavior
     {
         public string Quack()
         {

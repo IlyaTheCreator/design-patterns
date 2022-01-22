@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using DuckLibrary.Classes;
+using DuckLibrary.Classes.Behaviors;
 using DuckLibrary.Interfaces;
 
 namespace MySolution
@@ -13,6 +14,12 @@ namespace MySolution
             Duck redheadDuck = new RedheadDuck();
             Duck rubberDuck = new RubberDuck();
             Duck decoyDuck = new DecoyDuck();
+
+            IFlyBehavior flyNoWay = new FlyNoWay();
+            IQuackBehavior muteQuack = new MuteQuack();
+
+            redheadDuck.SetFlyBehavior(flyNoWay);
+            redheadDuck.SetQuackBehavior(muteQuack);
 
             List<Duck> ducks = new List<Duck>()
             {

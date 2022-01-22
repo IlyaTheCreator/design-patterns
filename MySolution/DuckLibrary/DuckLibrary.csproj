@@ -50,8 +50,8 @@
     <Compile Include="Classes\MallardDuck.cs" />
     <Compile Include="Classes\DecoyDuck.cs" />
     <Compile Include="Classes\RubberDuck.cs" />
-    <Compile Include="Interfaces\FlyBehavior.cs" />
-    <Compile Include="Interfaces\QuackBehavior.cs" />
+    <Compile Include="Interfaces\IFlyBehavior.cs" />
+    <Compile Include="Interfaces\IQuackBehavior.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\RedheadDuck.cs" />
   </ItemGroup>
